@@ -1,0 +1,25 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FFB3D9 0%, #B3FFE0 50%, #FFEB99 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.app::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.05)"/></svg>') repeat-x;
+  background-size: cover;
+  pointer-events: none;
+  animation: wave 15s linear infinite;
+  z-index: -1;
+}
+
+@keyframes wave {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(1200px); }
+}

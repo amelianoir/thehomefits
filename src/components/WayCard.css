@@ -1,0 +1,60 @@
+.way-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 179, 217, 0.3);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.way-card:hover {
+  box-shadow: 0 15px 40px rgba(255, 127, 181, 0.3);
+  border-color: rgba(255, 127, 181, 0.6);
+}
+
+.way-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 12px;
+  gap: 15px;
+}
+
+.way-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #FF7FB5;
+  margin: 0;
+  flex: 1;
+}
+
+.way-number {
+  background: linear-gradient(135deg, #FFB3D9, #B3FFE0);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  color: #2C2C2C;
+}
+
+.way-description {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .way-card {
+    padding: 20px;
+  }
+
+  .way-title {
+    font-size: 1.1rem;
+  }
+}

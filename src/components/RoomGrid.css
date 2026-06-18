@@ -1,0 +1,43 @@
+.room-grid {
+  min-height: 600px;
+  padding: 60px 20px;
+}
+
+.grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ways-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.no-room-selected,
+.no-products {
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 1.5rem;
+  color: #2C2C2C;
+  font-weight: 600;
+}
+
+.loading {
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 1.3rem;
+  color: #2C2C2C;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .room-grid {
+    padding: 40px 15px;
+  }
+
+  .ways-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
